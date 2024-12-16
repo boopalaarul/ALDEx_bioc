@@ -44,7 +44,7 @@
 #'
 #' @examples # See the examples for 'aldex.glm'
 #' @export
-aldex.glm.plot<-function (x, ..., eff = NULL, contrast=NULL, test = 'fdr', 
+aldex.glm.plot<-function (x, ..., eff = NULL, contrast=NULL, test = c('fdr', 'pval', 'effect'), 
 	type = c("MW", "MA", "volcano"), xlab = NULL, ylab = NULL,
     xlim = NULL, ylim = NULL, all.col = rgb(0, 0, 0, 0.2), all.pch = 19,
     all.cex = 0.4, called.col = "red", called.pch = 20, called.cex = 0.6,
@@ -52,6 +52,7 @@ aldex.glm.plot<-function (x, ..., eff = NULL, contrast=NULL, test = 'fdr',
     cutoff.effect = 1, rare.col = "black", rare = 0, rare.pch = 20,rare.cex = 0.2)
 {
     type <- match.arg(type)
+    test <- match.arg(test)
     if (length(eff) == 0){
         stop("Please run aldex.glm.effect before plotting")
     }
