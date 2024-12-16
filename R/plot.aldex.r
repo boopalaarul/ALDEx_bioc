@@ -13,7 +13,8 @@
 #' @param test the method of calculating significance, one of:
 #' \code{welch} = welch's t test - here a posterior predictive p-value;
 #' \code{wilcox} = wilcox rank test;
-#' \code{effect} = effect size
+#' \code{effect} = effect size;
+#' \code{both} = welch's t test p value and effect size cutoff. 
 #' @param cutoff.pval the Benjamini-Hochberg fdr cutoff, default 0.05
 #' @param cutoff.effect the effect size cutoff for plotting, default 1
 #' @param xlab the x-label for the plot, as per the parent \code{plot} function

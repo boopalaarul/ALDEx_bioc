@@ -13,7 +13,7 @@
 #' http://dx.doi.org/10.1080/10618600.2015.1131161; \code{volcano} is a volcano plot
 #' http://dx.doi.org/10.1186/gb-2003-4-4-210
 #' @param contrast the column name of the model matrix contrast to plot
-#' @param test the method of calculating significance, one of "pval" or "fdr"
+#' @param test the method of calculating significance, one of "pval" or "fdr" or "effect".
 #' @param cutoff.pval the fdr cutoff, default 0.05
 #' @param cutoff.effect the effect size cutoff for plotting, default 1
 #' @param xlab the x-label for the plot, as per the parent \code{plot} function
