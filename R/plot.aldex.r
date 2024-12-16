@@ -47,7 +47,7 @@
 aldex.plot<-function (x, ..., type = c("MW", "MA", "volcano", "volcano.var"), xlab = NULL, ylab = NULL,
     xlim = NULL, ylim = NULL, all.col = rgb(0, 0, 0, 0.2), all.pch = 19,
     all.cex = 0.4, called.col = "red", called.pch = 20, called.cex = 0.6,
-    thres.line.col = "darkgrey", thres.lwd = 1.5, test = c("welch", "wilcox", "effect", "both")
+    thres.line.col = "darkgrey", thres.lwd = 1.5, test = c("welch", "wilcox", "effect", "both"),
     cutoff.pval = 0.05, cutoff.effect = 1, rare.col = "black", rare = 0, rare.pch = 20,
     rare.cex = 0.2, main=NULL)
 {
